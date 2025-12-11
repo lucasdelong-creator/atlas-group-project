@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monsters</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h2>Monsters Guide</h2></header>
+    <header><h1>Monster Guide</h1></header>
     <h2><a href="index.html">Homepage</a></h2>
 
     <section>
-        <p>
+         <div class="text">
+            <p>
             Here you are able to search through the monsters of Breath of The Wild.
             Depending on what monster you search for you can find a description to let you know what you are up against.
             An image so you know what to look for.
             The drops the monster gives, so you know if it is worth your time. 
             Finally, you can see where these monsters are located! 
-        </p>
+            </p>
+         </div>
 
-        <input id="search" placeholder="Monster goes here">
-        <button type="submit">Submit</button>
-    </section>
+        <label>Choose a Monster you are curious about!
+            <select id="choice"></select>
+        </label>
 
-    <section>
-        <ul id="monsterName"></ul>
-    </section>
+        <div id="details"></div>
+
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,14 +1,29 @@
-const monsterName = document.getElementById("monsterName");
 const url = "https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters";
 
-function monsterList(){
+function dropdown(){
 fetch (url)
 .then(response => response.json())
 .then(data => {
-    const monsters = data.data;
-    for(const monster of monsters){
-        console.log(monster.name)
+    const choice = document.getElementById("choice");
+    for(const monster of data.data){
+        const option = document.createElement("option");
+        option.textContent = monster.name.toUpperCase();
+        choice.appendChild(option); 
+
+        option.onclick = () => {
+            monsterDetails();
+        }
     }
 })
 .catch(error => console.error("Error:",error));
+}
+dropdown();
+
+function monsterDetails(){
+    fetch(url)
+    .then(response => response.json())
+.then(data => {
+    const details = getElementById("details");
+    
+})
 }
