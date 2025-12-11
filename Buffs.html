@@ -10,14 +10,17 @@
     <script src="./Buffs.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+    <div class="half left">
+        
+   
     <div>
     <h1>The Basics of Buffs:</h1>
     <p> Buffs are a big part of Breath of the Wild given how much of an advantage they give you in both exploration and combat. This page will be covering the buffs available from ingredients used to make food! Each item that gives a buff has a certain potency level that determines how strong the buff is, when multiple ingredients of the same buff types are used together, you can get some of the strongest buffs in the game!</p><br><br>
    </div>
    <div>
 <label for="buffs">Choose a buff:</label>
-
+<!-- dropdown menu -->
 <select name="buffs" id="buffs">
   <option value="attack">Attack</option>
   <option value="defense">Defense</option>
@@ -31,57 +34,140 @@
   <option value="extra hearts">Extra Hearts</option>
 </select>
 </div>
-
-
+ </div>
+    <div class="half right">
+       
+   
 <!-- elements to change depending on dropdown menu selection -->
  <div id="attack-details" class="hidden-details">
-    <h4>Attack Buffs</h4>
+    <h4>Attack Buffs:</h4>
     <p>Attack buffs can be very useful for taking down strong opponents! Each item on this list will provide a potency to the dish's total attack buff. At one potency, you get a level 1 attack buff of 20% increased damage. At five potency, you get a level 2 attack buff of 30% increased damage. And at seven potency, you get a level 3 attack buff of 50% increased damage.</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr>
+         <td> 
+            <img id="https://botw-compendium.herokuapp.com/api/v3/compendium/entry/mighty_thistle/image" src="" alt="Mighty Thistle ">
+            <script src="Buffs.js"></script>
+         </td>
+         <td>+1</td>
+      </tr>
+    </table>
+   </div>
 
  <div id="defense-details" class="hidden-details">
-    <h4>Defense Buffs</h4>
+    <h4>Defense Buffs:</h4>
     <p>Defense buffs can be very useful for going up against opponents! Each item on this list will provide a potency to the dish's total defense buff. At one potency, you get a level 1 defense buff of 4 extra defense. At five potency, you get a level 2 defense buff of 12 extra defense. And at seven potency, you get a level 3 defense buff of 24 extra defense. It is important to note, every point of defense is quarter heart worth of damage you won't take from an enemy's attack, so at 4 defense you would negate 1 heart of damage from an enemy attack. The maximum defense you could achieve, 112 defense, would protect you from 28 hearts worth of damage.</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="speed-details" class="hidden-details">
-    <h4>Speed Buffs</h4>
+    <h4>Speed Buffs:</h4>
     <p>Speed buffs can be useful in just about every part of exploring the vast world, present within Breath of the Wild! Each item on this list will provide a potency to the dish's total speed buff. At one potency, you get a level 1 speed buff of 10% increased speed. At five potency, you get a level 2 speed buff of 20% increased speed. And at seven potency, you get a level 3 speed buff of 30% increased speed. Do note: this buff applies not only to walking and running, but also to gliding, swimming, and climbing as well!</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="stealth-details" class="hidden-details">
-    <h4>Stealth Buffs</h4>
+    <h4>Stealth Buffs:</h4>
     <p>Stealth buffs can be useful when trying to sneak up on or avoid opponents! Each item on this list will provide a potency to the dish's total stealth buff. At one potency, you get a level 1 stealth buff of 20% reduced sound. At five potency, you get a level 2 stealth buff of 40% reduced sound. And at seven potency, you get a level 3 speed buff of 70% reduced sound.</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="heat resistance-details" class="hidden-details">
-    <h4>Heat Resistance Buffs</h4>
+    <h4>Heat Resistance Buffs:</h4>
     <p>Heat resistance buffs can be very useful when exploring areas surrounding the Eldin Volcano or in the Gerudo Canyon or Desert! Each item on this list will provide a potency to the dish's total heat resitance buff, with only two levels for this specific buff. At one potency, you get a level 1 heat resistance buff, allowing you to explore comfortably under moderately high temperatures. at six potency, you get the level 2 heat resistance buff allowing you to explore to your hearts content under even the highest of temperatures.</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="cold resistance-details" class="hidden-details">
-    <h4>Cold Resistance Buffs</h4>
+    <h4>Cold Resistance Buffs:</h4>
     <p>Cold resistance buffs can be very useful when exploring areas like the Gerudo Highlands and Hebra Region! Each item on this list will provide a potency to the dish's total cold resitance buff, with only two levels for this specific buff. At one potency, you get a level 1 cold resistance buff, allowing you to explore comfortably under moderately low temperatures. at six potency, you get the level 2 cold resistance buff allowing you to explore to your hearts content at even the lowest of temperatures.</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="electric resistance-details" class="hidden-details">
-    <h4>Electric Resistance Buffs</h4>
+    <h4>Electric Resistance Buffs:</h4>
     <p>Electric resistance buffs can be very useful, as while they are situational, when they are at their highest level, they yield one of the most valuable effects when fighting opponents with electric attacks or travelling in a thunderstorm! Each item on this list will provide a potency to the dish's total electric resitance buff. At one potency, you get the level 1 electric resistance buff, negating ~33% of the damage you would take from an electric attack. at four potency, you get a level 2 electric buff, negating ~66% of the damage you would take from an electric attack. And at six potency, you get a level 3 electric buff, not only negating all damage from an electric attack but also preventing you from being shocked and dropping your equipment!</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Potency</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="restore stamina-details" class="hidden-details">
-    <h4>Restoring Stamina </h4>
+    <h4>Restoring Stamina:</h4>
     <p>Food that restores stamina can be very useful as you're traversing the wide open word of Breath of the Wild, whether it's to help you climb a lofty mountain or to continue swimming across a wide lake! Each item on this list has a certain amount of stamina that it naturally restores when cooked into a dish, and when these ingredients are mixed together they can yield the highest results! </p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Stamina Restored</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="extra stamina-details" class="hidden-details">
-    <h4>Obtaining Extra Stamina </h4>
+    <h4>Obtaining Extra Stamina:</h4>
     <p>Food that grants additional stamina can be very useful to use in anticipation of undertaking an ardous task, but also has the added benefit of completely restoring any currently missing stamina in addition to the extra stamina it already gives you! each item on this list has a certain amount of stamina that it naturally adds on top of your max stamina when cooked into a dish, and when these ingredients are mixed together they can yield the highest results!</p>
- </div>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Stamina Added</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
 
  <div id="extra hearts-details" class="hidden-details">
-    <h4>Obtaining Extra Hearts </h4>
+    <h4>Obtaining Extra Hearts:</h4>
     <p>Food that grants additional hearts can be very useful to use in anticipation of undertaking an ardous task, but also has the added benefit of completely restoring any currently missing hearts in addition to the extra hearts it already gives you! each item on this list has a certain amount of hearts that it naturally adds to your max health when cooked into a dish, and when these ingredients are mixed together they can yield the highest results! Do keep in mind though, the most hearts you can have at once, both permenant and temporary combined, is 30, so as you gather more heart containers, it may be wiser to spread your additional heart ingredients across multiple meals.</p>
+    <table>
+      <tr>
+         <th>Ingredient     </th>
+         <th>Hearts Added</th>
+      </tr>
+      <tr></tr>
+    </table>
+   </div>
+
+
+
  </div>
+</div>
 
 </body>

@@ -23,4 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleDetails(selectElement.value);
 });
 
-console.log("I work!");
+// console.log("I work!");
+
