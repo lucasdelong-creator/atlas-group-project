@@ -16,6 +16,7 @@ function toggleDetails(selectedValue) {
 const selectElement = document.getElementById('buffs');
 
 selectElement.addEventListener('change', (event) => {
+  // console.log(selectElement.value);
   toggleDetails(event.target.value);
 });
 
