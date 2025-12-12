@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BOTW Characters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Breath of the Wild – Characters</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="character.html" class="active">Characters</a></li>
+        <li><a href="items.html">Items</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section>
+      <h2>Core Characters</h2>
+
+      <form id="character-form" class="search-form">
+        <input
+          id="search-input"
+          type="text"
+          placeholder="Search by name (Link, Zelda, Mipha...)"
+        />
+        <button type="submit">Search</button>
+      </form>
+
+      <p id="status" class="status">Showing all characters.</p>
+    </section>
+
+    <section>
+      <div id="cards" class="cards"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Thanks for visiting Hyrule.</p>
+  </footer>
+
+  <script src="js/characters.js"></script>
+</body>
+</html>
