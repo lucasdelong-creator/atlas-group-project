@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background-image: url("Background.jpg");
+  background-image: url("Images/Background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -41,4 +41,25 @@ body {
 
 body {
     color: beige;
+}
+
+ a {
+    color: aqua
+}
+ a:hover {
+    color: goldenrod
+ }
+
+.topbar {
+   padding: 10px;
+   text-align: center;   
+}
+
+.topbar a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
 }
