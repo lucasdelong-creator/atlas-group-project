@@ -7,7 +7,6 @@ fetch (url)
 .then(response => response.json())
 .then(data => {
     const choice = document.getElementById("choice");
-    const choice2 = document.getElementById("choice2");
     for(const monster of data.data){
         const option = document.createElement("option");
         option.textContent = monster.name.toUpperCase();
@@ -30,8 +29,8 @@ function monsterDetails(){
 
     fetch(entryUrl)
     .then(response => response.json())
-.then(data => {
-    console.log(data)
+    .then(data => {
+    // console.log(data)
     details.innerHTML = `
         <h2>${data.data.name.toUpperCase()}</h2>
         <img src="${data.data.image}" alt="${data.data.name}">
