@@ -3,7 +3,41 @@
     padding: 0;
     box-sizing: border-box;
 }
-.text{
-    width: 500px;
-    margin: auto;
+header{
+    text-align: center;
+}
+body {
+    background-image: url("images/7lai2vnqzp921.webp");
+}
+body {
+    color:beige;
+}
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.left{
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.banner {
+    padding: 10px;
+    text-align: center;
+}
+.banner a {
+    color:aqua;
+    margin: 15px;
+    text-decoration: none;
+}
+.banner a:hover {
+    color: goldenrod;
 }

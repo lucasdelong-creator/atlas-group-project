@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Monster Guide</h1></header>
-    <h2><a href="index.html">Homepage</a></h2>
-
+    <header>
+        <h1>Guide to Hunting Monsters:</h1>
+    </header><br>
+    <div class="banner"><h2>
+        <a href="index.html">Homepage</a>
+        <a href="">Buffs</a>
+        <a href="">Characters</a>
+    </h2><br>
+    </div>
+   
+<div class="container">
+<div class="left">
     <section>
          <div class="text">
             <p>
@@ -19,14 +28,18 @@
             The drops the monster gives, so you know if it is worth your time. 
             Finally, you can see where these monsters are located! 
             </p>
-         </div>
+         </div><br><br>
 
         <label>Choose a Monster you are curious about!
-            <select id="choice"></select>
+            <select id="choice">
+            </select>
         </label>
-
-        <div id="details"></div>
-
+        </section>
+    </div>
+<div class="right">
+    <div id="details"></div>
+</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

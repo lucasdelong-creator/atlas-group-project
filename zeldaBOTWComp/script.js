@@ -1,16 +1,22 @@
 const url = "https://botw-compendium.herokuapp.com/api/v3/compendium/category/monsters";
 
+let entryUrl = "";
+
 function dropdown(){
 fetch (url)
 .then(response => response.json())
 .then(data => {
     const choice = document.getElementById("choice");
+    const choice2 = document.getElementById("choice2");
     for(const monster of data.data){
         const option = document.createElement("option");
         option.textContent = monster.name.toUpperCase();
         choice.appendChild(option); 
+        // console.log(data.image)
 
-        option.onclick = () => {
+        choice.onchange = () => {
+            console.log(choice.value)
+            entryUrl = "https://botw-compendium.herokuapp.com/api/v3/compendium/entry/" + choice.value.toLowerCase();
             monsterDetails();
         }
     }
@@ -20,10 +26,18 @@ fetch (url)
 dropdown();
 
 function monsterDetails(){
-    fetch(url)
+    // const details = getElementById("details");
+
+    fetch(entryUrl)
     .then(response => response.json())
 .then(data => {
-    const details = getElementById("details");
-    
+    console.log(data)
+    details.innerHTML = `
+        <h2>${data.data.name.toUpperCase()}</h2>
+        <img src="${data.data.image}" alt="${data.data.name}">
+        <p>${data.data.description}</p>
+        <p>Drops: ${data.data.drops}</p>
+        <p>Locations: ${data.data.common_locations}</p>
+          `  ;
 })
 }
