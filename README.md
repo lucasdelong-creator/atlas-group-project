@@ -1,9 +1,9 @@
 # atlas-group-project
 
-Left to do: 
-1. work out api call for the images in the tables.
-2. finish tables.
-3. add animation to images(hover effect).
-4. add banner over the top/links to other pages.
-5. make sure it looks good on mobile.
- 
+https://lucasdelong-creator.github.io/atlas-group-project/zeldaBOTWComp/index.html
+In this website, we have decided to make a few pages to understand enemies, get the most out of your buffs and introduce you to characters within Hyrule. Within these pages, we go into detail abou these subjects to ensure you come out with a better understanding of the game. We understand that this is barebones but we are on a time constraint so we need to keep this within reason of new developers.
+
+As gamers ourselves, we were also in a position where we walked out of that cave for the first time, and had no clue what to do. All we could do was progress and figure things out as we go. The whole purpose of this website is to help new players understand the virtual world of Hyrule. So they can fully enjoy it with some of the confusion alleviated.
+
+The index is there to introduce people to our website and give an overvie to our pages. We used css to center text and add a hover effect to change color to the links. The monsters page was used to inform people of the monsters, and uses css to split the page introduction with the form to the left, with the respective monster description and image split to the right. The form is there to allow people to choose a monster. The input is the item from the api and the output was the image and description. The buffs page serves as a guide to ther buffs one can get, and uses css to split the page introduction with the form to the left, with the respective buff description and image of a key ingredient to the right. The form allows people to choose a certain buff. Once a buff has been chosen a picture of the best itme and a description is shown. Finally, the characters page serves as a guide to characters in zelda. It uses a search bar to highlight specific characters. Then returns a description and image. 
+
